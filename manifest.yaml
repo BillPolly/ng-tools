@@ -1,1 +1,3 @@
-name: ng-toolsncollections:n  - packagesn
+name: ng-tools
+collections:
+  - packages

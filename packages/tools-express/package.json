@@ -1,0 +1,27 @@
+{
+  "name": "@ng/tools-express",
+  "version": "0.0.1",
+  "description": "Express.js HTTP server handle — programmatic route management and static file serving",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "legion": {
+    "handles": {
+      "express": {
+        "dataSourceExport": "ExpressDataSource",
+        "handleExport": "ExpressHandle",
+        "mode": "sync"
+      }
+    },
+    "provides": [
+      "express",
+      "http-server"
+    ]
+  },
+  "dependencies": {
+    "@ng/handles-handle": "*",
+    "@ng/handles-data-sources-base": "*",
+    "express": "^4.21.0"
+  }
+}
